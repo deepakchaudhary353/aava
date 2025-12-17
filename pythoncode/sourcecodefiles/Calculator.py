@@ -1,6 +1,11 @@
+"""
+Calculator module converted from C# to Python.
+Provides basic arithmetic operations: add, subtract, multiply, divide.
+"""
+
 class Calculator:
     """
-    Calculator class provides basic arithmetic operations: add, subtract, multiply, divide.
+    A simple calculator class for basic arithmetic operations.
     """
 
     def add(self, a: float, b: float) -> float:
@@ -18,7 +23,8 @@ class Calculator:
     def divide(self, a: float, b: float) -> float:
         """
         Return the quotient of a divided by b.
-        Raises ZeroDivisionError if b is zero.
+        Raises:
+            ZeroDivisionError: If b is zero.
         """
         if b == 0:
             raise ZeroDivisionError("Division by zero is not allowed.")
